@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Baixe Alight Motion PRO grátis - Versão premium desbloqueada">
-    <meta name="keywords" content="alight motion, download, grátis, premium, editor de vídeo">
+    <meta name="description" content="Baixe Alight Motion PRO grátis">
+    <meta name="keywords" content="alight motion, download, pro, premium">
 
-    <title>Alight Motion PRO - Download Grátis</title>
+    <title>Alight Motion PRO – Download Grátis</title>
 
-    <!-- CSS BÁSICO -->
     <style>
         body {
             margin: 0;
@@ -16,177 +15,158 @@
             background: #0f0f0f;
             color: #fff;
         }
+
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: auto;
             padding: 20px;
         }
+
         header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
+
         .logo {
             font-size: 28px;
             font-weight: bold;
         }
+
         .tagline {
-            opacity: .7;
+            opacity: 0.7;
+            font-size: 14px;
         }
-        .page {
-            display: none;
-        }
-        .page.active {
-            display: block;
-        }
-        .ad-banner-top,
-        .ad-sidebar,
-        .ad-space-large {
-            background: #1b1b1b;
-            border: 1px dashed #333;
-            margin: 20px 0;
+
+        .ad-box {
+            background: #1c1c1c;
+            border: 1px dashed #444;
             padding: 15px;
             text-align: center;
-            min-height: 90px;
+            margin: 20px 0;
+            font-size: 13px;
+            opacity: 0.7;
         }
-        .main-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
+
+        .main {
+            display: flex;
             gap: 20px;
+            flex-wrap: wrap;
         }
-        .app-showcase {
+
+        .app-info {
+            flex: 2;
             background: #161616;
             padding: 20px;
             border-radius: 6px;
         }
-        .app-image {
-            font-size: 60px;
-            text-align: center;
+
+        .sidebar {
+            flex: 1;
+            background: #161616;
+            padding: 20px;
+            border-radius: 6px;
         }
-        .features {
+
+        ul {
             padding-left: 18px;
         }
+
+        .download {
+            text-align: center;
+            margin-top: 30px;
+        }
+
         .btn-download {
-            background: #00ff88;
+            background: #1db954;
             color: #000;
-            border: none;
             padding: 15px 25px;
             font-size: 16px;
+            border: none;
+            border-radius: 6px;
             cursor: pointer;
-            margin-top: 20px;
-            display: inline-block;
             text-decoration: none;
+            display: inline-block;
         }
-        .ad-page {
-            text-align: center;
+
+        .btn-download:hover {
+            background: #1ed760;
         }
+
         footer {
             margin-top: 40px;
             text-align: center;
-            font-size: 13px;
-            opacity: .6;
-        }
-
-        @media (max-width: 768px) {
-            .main-content {
-                grid-template-columns: 1fr;
-            }
+            font-size: 12px;
+            opacity: 0.6;
         }
     </style>
 </head>
-
 <body>
 
 <div class="container">
 
-    <!-- PÁGINA 1 -->
-    <div class="page active" id="page1">
-        <header>
-            <div class="logo">🎬 Alight Motion</div>
-            <div class="tagline">Editor de Vídeo e Animação Profissional</div>
-        </header>
+    <header>
+        <div class="logo">🎬 Alight Motion PRO</div>
+        <div class="tagline">Editor de vídeo profissional – versão desbloqueada</div>
+    </header>
 
-        <div class="ad-banner-top"></div>
+    <!-- ANÚNCIO (GLOBAL) -->
+    <div class="ad-box">
+        📢 Publicidade
+    </div>
 
-        <div class="main-content">
-            <div class="app-showcase">
-                <div class="app-image">🎥</div>
-                <h2>Alight Motion PRO</h2>
-                <p>Versão premium desbloqueada</p>
-                <ul class="features">
-                    <li>Sem marca d’água</li>
-                    <li>Recursos PRO liberados</li>
-                    <li>Animações vetoriais</li>
-                    <li>Efeitos profissionais</li>
-                    <li>Exportação em alta qualidade</li>
-                </ul>
+    <div class="main">
+        <div class="app-info">
+            <h2>Sobre o App</h2>
+            <ul>
+                <li>Todos os recursos PRO desbloqueados</li>
+                <li>Sem marca d’água</li>
+                <li>Efeitos e animações avançadas</li>
+                <li>Exportação em alta qualidade</li>
+                <li>Camadas ilimitadas</li>
+            </ul>
+        </div>
 
-                <button class="btn-download" onclick="goToPage(2)">
-                    BAIXAR AGORA
-                </button>
+        <!-- ANÚNCIO -->
+        <div class="sidebar">
+            <div class="ad-box">
+                📢 Publicidade
             </div>
-
-            <div class="ad-sidebar"></div>
         </div>
     </div>
 
-    <!-- PÁGINA 2 -->
-    <div class="page" id="page2">
-        <div class="ad-page">
-            <h2>⏳ Preparando seu download...</h2>
-            <div class="ad-space-large"></div>
-            <button class="btn-download" onclick="goToPage(3)">Continuar</button>
-        </div>
+    <!-- ANÚNCIO -->
+    <div class="ad-box">
+        📢 Publicidade
     </div>
 
-    <!-- PÁGINA 3 -->
-    <div class="page" id="page3">
-        <div class="ad-page">
-            <h2>✨ Quase lá!</h2>
-            <div class="ad-space-large"></div>
-            <button class="btn-download" onclick="goToPage(4)">Continuar</button>
-        </div>
+    <div class="download">
+        <a href="https://www.mediafire.com/SEU_LINK_AQUI" target="_blank" class="btn-download">
+            📥 Baixar Agora
+        </a>
     </div>
 
-    <!-- PÁGINA FINAL -->
-    <div class="page" id="page4">
-        <div class="ad-page">
-            <h2>🎉 Tudo pronto!</h2>
-            <div class="ad-space-large"></div>
-
-            <a href="https://www.mediafire.com/SEU_LINK_AQUI"
-               target="_blank"
-               class="btn-download">
-                📥 DOWNLOAD MEDIAFIRE
-            </a>
-        </div>
+    <!-- ANÚNCIO -->
+    <div class="ad-box">
+        📢 Publicidade
     </div>
 
     <footer>
-        <p>© 2024 Alight Motion Download</p>
-        <p>Site não oficial</p>
+        © 2024 – Site não oficial
     </footer>
 
 </div>
 
-<!-- SCRIPT DE NAVEGAÇÃO -->
+<!-- SCRIPT DE ANÚNCIOS (ÚNICO, GLOBAL) -->
 <script>
-function goToPage(id) {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.getElementById('page' + id).classList.add('active');
-}
-</script>
-
-<!-- SCRIPT DE ADS (JEALOUSSALE) -->
-<script>
-(function(gurv){
-    var d = document,
-        s = d.createElement('script'),
-        l = d.scripts[d.scripts.length - 1];
-    s.settings = gurv || {};
-    s.src = "//jealoussale.com/cPD/9t6.bH2X5ilgSiWtQq9CNXjQct0GMDzfQk2-MyCy0/2dNLzvQ/zfNZDJYZxQ";
-    s.async = true;
-    s.referrerPolicy = 'no-referrer-when-downgrade';
-    l.parentNode.insertBefore(s, l);
+(function(yuevmc){
+var d = document,
+    s = d.createElement('script'),
+    l = d.scripts[d.scripts.length - 1];
+s.settings = yuevmc || {};
+s.src = "//greedy-strength.com/byXTV.sld/GPlB0zYfW/ce/KeEmv9puVZaUdlCkxPuTqYp3jNoD-M/0QNXTYYbtoN/jhcQ0LMKz/Qq1eNPwM";
+s.async = true;
+s.referrerPolicy = 'no-referrer-when-downgrade';
+l.parentNode.insertBefore(s, l);
 })({});
 </script>
 
