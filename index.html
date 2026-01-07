@@ -1,141 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Baixe Alight Motion PRO grátis - Versão premium desbloqueada com todos os recursos">
-    <meta name="keywords" content="alight motion, download, grátis, premium, editor de vídeo">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alight Motion PRO - Download Grátis</title>
+<meta name="description" content="Baixe Alight Motion PRO grátis - Versão premium desbloqueada">
+<link rel="stylesheet" href="style.css">
 
-    <!-- VERIFICAÇÃO HILLTOP ADS (se precisar depois) -->
-    <!-- <meta name="hilltopads-site-verification" content="2c1fbab662458e946c4c"> -->
-
-    <title>Alight Motion PRO - Download Grátis</title>
-    <link rel="stylesheet" href="style.css">
+<style>
+/* CSS mínimo só pra funcionar */
+body { font-family: Arial, sans-serif; background:#0f0f0f; color:#fff; margin:0 }
+.container { max-width:1000px; margin:auto; padding:20px }
+.page { display:none }
+.page.active { display:block }
+.btn-download { background:#00ff88; color:#000; padding:15px 25px; border:none; cursor:pointer; font-size:16px }
+.ad-banner-top,.ad-sidebar,.ad-space-large {
+    background:#1b1b1b;
+    margin:20px 0;
+    padding:15px;
+    text-align:center;
+    min-height:90px;
+}
+.timer { font-size:40px; margin:20px }
+</style>
 </head>
+
 <body>
 
 <div class="container">
 
-    <!-- PÁGINA 1 -->
-    <div class="page active" id="page1">
-        <header>
-            <div class="logo">🎬 Alight Motion</div>
-            <div class="tagline">Editor de Vídeo e Animação Profissional</div>
-        </header>
+<!-- PÁGINA 1 -->
+<div class="page active" id="page1">
+    <h1>🎬 Alight Motion PRO</h1>
 
-        <div class="ad-banner-top">
-            <h3>📢 ESPAÇO PARA ANÚNCIO</h3>
-            <p>Banner 728x90 ou Responsivo</p>
-        </div>
+    <div class="ad-banner-top"></div>
 
-        <div class="main-content">
-            <div class="app-showcase">
-                <div class="app-image">🎥</div>
-                <div class="app-info">
-                    <h2>Alight Motion PRO</h2>
-                    <span class="version-badge">Versão Premium Desbloqueada</span>
-                    <ul class="features">
-                        <li>Todos os recursos PRO desbloqueados</li>
-                        <li>Sem marca d'água</li>
-                        <li>Animações vetoriais avançadas</li>
-                        <li>Efeitos visuais profissionais</li>
-                        <li>Exportação em alta qualidade</li>
-                        <li>Camadas ilimitadas</li>
-                        <li>Keyframes e máscaras</li>
-                    </ul>
-                </div>
-            </div>
+    <p>Versão premium desbloqueada • Sem marca d'água</p>
 
-            <div class="ad-sidebar">
-                <h3>📱 ESPAÇO PARA ANÚNCIO</h3>
-                <p>Banner 300x250</p>
-            </div>
+    <div class="ad-sidebar"></div>
 
-            <div class="download-section">
-                <h3>📥 Pronto para baixar?</h3>
-                <button class="btn-download" onclick="goToPage(2)">BAIXAR AGORA</button>
-            </div>
-        </div>
-    </div>
+    <button class="btn-download" onclick="startFlow()">BAIXAR AGORA</button>
+</div>
 
-    <!-- PÁGINA 2 -->
-    <div class="page" id="page2">
-        <div class="main-content ad-page">
-            <h2>⏳ Preparando seu download...</h2>
+<!-- PÁGINA 2 -->
+<div class="page" id="page2">
+    <h2>⏳ Preparando download...</h2>
+    <div class="timer" id="t1">5</div>
+    <div class="ad-space-large"></div>
+</div>
 
-            <div class="timer" id="timer1">5</div>
-            <div class="progress-bar">
-                <div class="progress-fill" id="progress1"></div>
-            </div>
+<!-- PÁGINA 3 -->
+<div class="page" id="page3">
+    <h2>✨ Quase lá!</h2>
+    <div class="timer" id="t2">5</div>
+    <div class="ad-space-large"></div>
+</div>
 
-            <div class="ad-space-large">
-                <h3>📢 ANÚNCIO</h3>
-            </div>
+<!-- PÁGINA FINAL -->
+<div class="page" id="page4">
+    <h2>🎉 Tudo pronto!</h2>
 
-            <button class="btn-download" id="btn1" onclick="goToPage(3)" disabled>
-                Aguarde <span id="btnTimer1">5</span>s
-            </button>
-        </div>
-    </div>
+    <div class="ad-space-large"></div>
 
-    <!-- PÁGINA 3 -->
-    <div class="page" id="page3">
-        <div class="main-content ad-page">
-            <h2>✨ Quase lá!</h2>
-
-            <div class="timer" id="timer2">5</div>
-            <div class="progress-bar">
-                <div class="progress-fill" id="progress2"></div>
-            </div>
-
-            <div class="ad-space-large">
-                <h3>📢 ANÚNCIO</h3>
-            </div>
-
-            <button class="btn-download" id="btn2" onclick="goToPage(4)" disabled>
-                Aguarde <span id="btnTimer2">5</span>s
-            </button>
-        </div>
-    </div>
-
-    <!-- PÁGINA FINAL -->
-    <div class="page" id="page4">
-        <div class="main-content ad-page">
-            <h2>🎉 Tudo pronto!</h2>
-
-            <div class="ad-space-large">
-                <h3>📢 ANÚNCIO FINAL</h3>
-            </div>
-
-            <a href="https://www.mediafire.com/SEU_LINK_AQUI" target="_blank" class="btn-download">
-                📥 DOWNLOAD MEDIAFIRE
-            </a>
-        </div>
-    </div>
-
-    <footer>
-        <p>© 2024 Alight Motion Download</p>
-        <p style="font-size:12px;opacity:.6;">Site não oficial</p>
-    </footer>
+    <a class="btn-download" target="_blank"
+       href="https://www.mediafire.com/SEU_LINK_AQUI">
+       📥 DOWNLOAD MEDIAFIRE
+    </a>
+</div>
 
 </div>
 
-<!-- SCRIPT DO SITE -->
-<script src="script.js"></script>
-
-<!-- SCRIPT DE ADS (UNDERGROUND) -->
+<!-- SCRIPT PRINCIPAL -->
 <script>
-(function(yuevmc){
-    var d = document,
-        s = d.createElement('script'),
-        l = d.scripts[d.scripts.length - 1];
-    s.settings = yuevmc || {};
-    s.src = "//greedy-strength.com/byXTV.sld/GPlB0zYfW/ce/KeEmv9puVZaUdlCkxPuTqYp3jNoD-M/0QNXTYYbtoN/jhcQ0LMKz/Qq1eNPwM";
-    s.async = true;
-    s.referrerPolicy = 'no-referrer-when-downgrade';
-    l.parentNode.insertBefore(s, l);
-})({});
+let adsLoaded = false;
+
+function goToPage(id){
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page'+id).classList.add('active');
+}
+
+function startFlow(){
+    loadAds(); // 🔥 ADS SÓ AQUI
+    goToPage(2);
+    startTimer('t1', () => {
+        goToPage(3);
+        startTimer('t2', () => {
+            goToPage(4);
+        });
+    });
+}
+
+function startTimer(el, callback){
+    let t = 5;
+    const timer = setInterval(()=>{
+        document.getElementById(el).textContent = t;
+        t--;
+        if(t < 0){
+            clearInterval(timer);
+            callback();
+        }
+    },1000);
+}
+
+/* ===== ADS ===== */
+function loadAds(){
+    if(adsLoaded) return;
+    adsLoaded = true;
+
+    const adHTML = `
+        <iframe
+            src="https://parallel-cap.com/bC3/VU0AP.3YpDvqbbmPVrJ/ZNDE0j2ZN/z/QzzrNdDtY-wYLYTDYk3/NfDzMp0oNKjxEE"
+            width="100%"
+            height="250"
+            frameborder="0"
+            scrolling="no"
+            style="border:none">
+        </iframe>
+    `;
+
+    document.querySelectorAll(
+        '.ad-banner-top,.ad-sidebar,.ad-space-large'
+    ).forEach(div=>{
+        div.innerHTML = adHTML;
+    });
+}
 </script>
 
 </body>
-                                                                               </html>
+        </html>
